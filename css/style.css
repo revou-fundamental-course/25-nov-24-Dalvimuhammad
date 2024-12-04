@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: gray;
+}
+
+#section-awal {
+    background-color: white;
+    border-radius: 20px;
+    width: 2100px;
+    height: 700px;
+    z-index: 4;
+    margin: 10px;
+}
+
+#section-akhir {
+    background-color: white;
+    border-radius: 20px;
+    width: 2100px;
+    height: 700px;
+    z-index: 4;
+    margin: 10px;
+}
+
+.div-akhir {
+    padding: 20px;
+}
+
+body {
+    margin: 0px;
+}
+
+#section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+
+#judul {
+    padding: 4px 16px;
+}
+
+#judul h1 {
+    margin-left: 270px;
+}
+
+#detail {
+    padding: 4px 16px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4px 48px;
+    border-radius: 20px;
+}
+
+.gender {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender-detail-boy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender-detail-boy img {
+    width: 100px;
+    height: 100px;
+}
+
+.gender-detail-girl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender-detail-girl img {
+    width: 100px;
+    height: 100px;
+}
+
+.gender-detail-boy {
+    filter: grayscale(1) ;
+    color: gray;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gender-detail-boy.active{
+    filter: grayscale(0);
+    color: black;
+    transform: scale(1.1);
+}
+
+.gender-detail-girl {
+    filter: grayscale(1) ;
+    color: gray;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.gender-detail-girl.active{
+    filter: grayscale(0);
+    color: black;
+    transform: scale(1.1);
+}
+
+.gender-detail-boy p {
+    font-size: 17px;
+    margin: 0;
+}
+
+.gender-detail-girl p {
+    font-size: 17px;
+    margin: 0;
+}
+
+.hasil-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon img {
+    width: 31.3px;
+    height: 31.3px;
+    background-color: rgba(0, 0, 0, 0.3);    
+    padding: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.isi {
+    margin-bottom: 20px;
+}
+
+.isi-detail label {
+    margin-bottom: 5px;
+}
+
+.isi-detail {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 10px;
+    
+}
+
+.isi-detail input {
+    border-radius: 0 3px 3px 0;
+    border: none;
+    padding: 8px;
+    width: 300px;
+}
+
+.btn {
+    display: flex;
+    gap: 10px;
+}
+
+.submit button{
+    border-radius: 5px;
+    background-color: #339fff;
+    padding: 9px;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+}
+
+.submit button:hover {
+    background-color: green;
+}
+
+.Reset button {
+    border-radius: 5px;
+    background-color: white;
+    padding: 9px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.Reset button:hover {
+    background-color: red;
+}
+.judul-hasil h1{
+    margin-top: 0;
+    margin-left: 230px;
+}
+
+#Hasil {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4px 48px;
+    width: 680px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}   
+
+#img-g {
+    height: 150px;
+    width: 150px;
+}
+
+.hasil-detail p {
+    font-size: 42px ;
+    margin: 10px;
+}
+
+.button-hasil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #339fff;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.btn-konsul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.detail-p {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4px 48px;
+    width: 680px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/assets/doctor.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.detail-p h3 {
+    margin-top: 0;
+}
+
+.penjel-bmi {
+    text-align: justify;
+}
+
+.Doktor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-doktor {
+    border-radius: 5px;
+    background-color: #339fff;
+    padding: 9px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.footer-detail {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 20px 20px 0 20px;
+    height: auto;
+    gap: 200px;
+}
+
+.footer-judul img {
+    width: 300px;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.footer-BMI{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-BMI p{
+    margin: 0;
+}
+
+.footer-BMI ul li{
+    text-align: left;
+    padding-bottom: 10px ;
+}
+
+.footer-BMI-detail{
+    font-weight: bold;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 5px;
+}
+
+.footer-i p {
+    margin: 0;
+    margin-left: 120px;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.img-ap {
+    width: 200px;
+    height: 55px;
+    margin: 0;
+}
+.img-ps{
+    width: 200px;
+    height: 55px;
+    margin: 0;
+}

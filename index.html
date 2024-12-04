@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <section id="section-awal">
+            <header id="judul">
+                <h1>Kalkulator BMI</h1>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang
+                    penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagimana denganmu? Yuk, hitung sekarang di kalkulator BMI.
+                </p>
+            </header>
+            <section id="section">
+                <form action="">
+                    <p> Jenis Kelamin</p>
+                    <div class="gender" id="gender">
+                        <div class="gender-detail-boy" onclick="selectGender('pria')" id="pria" data-gender="pria">
+                            <i class="img-boy">
+                                <img src="./assets/man .png" alt="boy.png">
+                            </i>
+                            <p>Pria</p>
+                        </div>
+                        <div class="gender-detail-girl" onclick="selectGender('wanita')" id="wanita" data-gender="wanita">
+                            <i href="index.html" class="img-girl">
+                                <img src="./assets/women.png" alt="girl.png">
+                            </i>
+                            <p>Wanita</p>
+                        </div>
+                    </div>
+                    <div class="isi">
+                        <div class="isi-detail">
+                            <label for="berat">Berat Badan (kg)</label>
+                            <div class="icon">
+                                <img src="./assets/pen.png" alt="">                        
+                                <input type="text" id="berat" pattern="\d+" title="Masukkan angka" required>
+                            </div>
+                        </div>
+                        <div class="isi-detail">
+                            <label for="usia">Usia (tahun)</label>
+                            <div class="icon">
+                                <img src="./assets/pen.png" alt="">                        
+                                <input type="text" id="usia" pattern="\d+" title="Masukkan angka" required>
+                            </div>
+                        </div>
+                        <div class="isi-detail">
+                            <label for="tinggi">Tinggi Badan (cm)</label>
+                            <div class="icon">
+                                <img src="./assets/pen.png" alt="">                        
+                                <input type="text" id="tinggi" pattern="\d+" title="Masukkan angka" required>
+                            </div>              
+                    </div>
+                    <div class="btn">
+                        <div class="submit">
+                            <button type="submit" value="submit" id="hitungButton" onclick="hitungBMI()">Hitung BMI</button>
+                        </div>
+                        <div class="Reset">
+                            <button type="reset" value="Reset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </section>
+
+        <section id="section-akhir">
+            <div class="div-akhir">
+                <header class="judul-hasil">
+                    <h1>Hasil Kalkulator MBI</h1>
+                </header>
+                <section id="Hasil">
+                    <div id="img-g"></div>
+                    <div class="hasil-detail">
+                        <div>
+                            <p id="kategoriBMI"></p>
+                        </div>
+                        <div>
+                            <p id="hasilBMI"></p>
+                        </div>
+                    </div>
+                    <button class="btn button-hasil">
+                        Download Hasil BMI
+                    </button>
+                </section>
+                <section>
+                    <div>
+                        <p id="penjelBMI"></p>
+                        <p id="detailBMI"></p>
+                    </div>
+                    <div class="btn-konsul">
+                        <div>
+                            <a class="btn btn-doktor" style="text-decoration: none;" href="https://www.halodoc.com/tanya-dokter/cari?source=com.halodoc.bmicalculator&category_id=426fb851-f268-4332-8aa3-52c0ff78c27f&category_name=Ahli%20Gizi">Konsultasi Ahli Gizi Via Aplikasi</a>
+                        </div>
+                        <div>
+                            <a class="btn btn-doktor" style="text-decoration: none;" href="https://www.halodoc.com/tanya-dokter/cari?source=com.halodoc.bmicalculator&category_id=426fb851-f268-4332-8aa3-52c0ff78c27f&category_name=Ahli%20Gizi">Registrasi Online Ahli Gizi</a>
+                        </div>
+                    </div>
+                    <div class="penjel-bmi">
+                        <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.
+                            Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran anda terkait dengan berat badan anda.
+                        </p>
+                    </div>
+                    <div class="detail-p">
+                        <div>
+                            <h3>Berat Badan Lebih</h3>
+                            <ul style="list-style: none;">
+                                <li>
+                                    Diabetes
+                                </li>
+                                <li>
+                                    Hipertensi
+                                </li>
+                                <li>
+                                    Sakit Jantung
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Doktor">
+                            <div>
+                                <a class="btn btn-doktor" style="text-decoration: none;" href="https://www.halodoc.com/tanya-dokter/cari?source=com.halodoc.bmicalculator&category_id=d8b7c9e4-bc99-4297-ac15-44a3a51d16a3&category_name=Dokter%20Umum">Konsultasi Doktor Via Aplikasi</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-doktor" style="text-decoration: none;" href="https://www.halodoc.com/tanya-dokter/cari?source=com.halodoc.bmicalculator&category_id=426fb851-f268-4332-8aa3-52c0ff78c27f&category_name=Ahli%20Gizi">Registrasi Online Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-detail">
+            <div class="footer-judul">
+                <img src="./assets/RevoU.png" alt="RevoU.png">
+            </div>
+            <div class="footer-BMI">
+                <div class="footer-BMI-detail">
+                    <p>Keunggulan BMI</p>
+                </div>
+                <div>
+                    <ul style="list-style: none;">
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidal</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-i">
+                <p>Download Aplikasi</p>
+                <div class="footer-icon">
+                    <div>
+                        <img src="./assets/playstore.png" alt="playstore.png" class="img-ps">
+                    </div>
+                    <div>
+                        <img src="./assets/ios.png" alt="ios.png" class="img-ap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./Jscript/script.js"></script>
+</body>
+</html>
