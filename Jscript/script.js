@@ -3,8 +3,7 @@
   function selectGender(selectedGender) {
     const genderContainer = document.getElementById("gender");
     genderContainer.setAttribute("data-gender", selectedGender);
-  
-    // Tambahkan kelas aktif pada gender yang dipilih
+
     document.getElementById("pria").classList.toggle("active", selectedGender === "pria");
     document.getElementById("wanita").classList.toggle("active", selectedGender === "wanita");
   }
