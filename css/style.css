@@ -353,3 +353,148 @@ form {
     height: 55px;
     margin: 0;
 }
+
+@media only screen and (max-width: 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: gray;
+    }
+
+    #section-awal {
+        background-color: white;
+        border-radius: 20px;
+        width: 355px;
+        height: 650px;
+        z-index: 4;
+        margin: 10px;
+    }
+    
+    #section-akhir {
+        background-color: white;
+        border-radius: 20px;
+        width: 355px;
+        height: 650px;
+        z-index: 4;
+        margin: 10px;
+    }
+
+    form {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 4px 20px;
+        border-radius: 20px;
+    }
+
+    #judul p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    #judul h1 {
+        font-size: 18px;
+        margin:2px 0 2px 90px;
+    }
+
+    .judul-hasil h1{
+        font-size: 18px;
+        margin:2px 0 10px 65px;
+    }
+
+    #Hasil {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 4px 48px;
+        width: 315px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        border-radius: 20px;
+    }  
+
+    .penjel-bmi {
+        font-size: 13px;
+    }
+
+    .button-hasil {
+        font-size: 10px;
+        padding: 7px;
+        cursor: pointer;
+    }
+
+    #penjelBMI {
+        font-size: 13px;
+    }
+    #detailBMI {
+        font-size: 13px;
+    }
+
+    .detail-p {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 4px 20px;
+        width: 315px;
+        height: 145px;
+        display: flex;
+        border-radius: 20px;
+    }
+
+    #kategoriBMI {
+        font-size: 13px;
+    }
+    #hasilBMI {
+        font-size: 20px;
+    }
+    .hasil-detail {
+        margin-bottom: 13px;
+    }
+    .btn-doktor {
+        font-size: 10px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .detail-p h3 {
+        font-size: 15px;
+    }
+
+    .detail-p ul {
+        font-size: 13px;
+        margin-right: 40px;
+    }
+
+    .footer-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .footer-judul img {
+        height: 100px;
+        width: 300px;
+        margin-top: 0;
+    }
+
+
+
+    .footer-BMI ul li{
+        text-align: center;
+        margin-right: 20px;
+        list-style:decimal;
+    }
+
+    .footer-i p {
+        margin:0;
+        margin-left: 80px;
+    }
+
+    .footer-icon img {
+        width: 150px;
+        height: 50px;
+    }
+}
