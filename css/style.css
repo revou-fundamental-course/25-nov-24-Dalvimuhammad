@@ -159,6 +159,13 @@ form {
     margin-bottom: 20px;
 }
 
+#kategoriBMI {
+    font-size: 20px;
+}
+#hasilBMI {
+    font-size: 32px;
+}
+
 .isi-detail label {
     margin-bottom: 5px;
 }
